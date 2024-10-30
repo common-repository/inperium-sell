@@ -1,0 +1,61 @@
+.inperium-fields-list {
+	width: 100%;
+	max-width: 55rem;
+	min-width: 35rem;
+	max-height: 45rem;
+	overflow: auto;
+	padding-right: 12px;
+	margin-top: 16px;
+}
+
+.inperium-fields-list > ul {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+}
+
+.inperium-fields-row {
+	display: flex;
+	justify-content: space-between;	
+	cursor: pointer;
+}
+
+.inperium-fields-row-half {
+	display: flex;
+	align-items: center;
+	padding: 8px 0;
+}
+
+.inperium-fields-row-half input {
+	margin-top: 0;
+	margin-left: 8px;
+	margin-right: 8px;
+}
+
+.inperium-fields-row-half > .inperium-fields-row-label {
+	margin: 0 8px !important;
+	display: inline-flex;
+	align-items: center;
+}
+
+input#inperium_show_contacts[type="checkbox"]{
+	margin-left: 12px;
+}
+
+input#inperium_show_contacts[type="checkbox"] + label {
+	margin-right: 8px !important;
+}
+
+.inperium-entity-contacts,
+.inperium-entity-companies {
+	display: none;
+}
+
+input#inperium_show_companies[type="checkbox"]:checked ~ .inperium-fields-list > ul > .inperium-entity-companies,
+input#inperium_show_contacts[type="checkbox"]:checked ~ .inperium-fields-list > ul > .inperium-entity-contacts {
+	display: flex;
+}
+
+p.inperium-error {
+	color: #FF6464;
+}

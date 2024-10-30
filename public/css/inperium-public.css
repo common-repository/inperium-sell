@@ -1,0 +1,19 @@
+.inperium-form-group {
+	margin-bottom: 25px;
+}
+
+.inperium-form label.error {
+	display: block;
+	color: #FF6464;
+	font-size: 0.8em;
+}
+
+.inperium-form input.error {
+	border-color: #FF6464;
+}
+
+.inperium-form div.error {
+	color: #FF6464;
+	font-size: 0.8em;
+	margin: 8px 0;
+}
